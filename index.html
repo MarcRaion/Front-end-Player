@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+    <meta name="author" content="Marcin Hojarski" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="webfonts/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>
+    <header class='header'>
+
+        <div id="songs" class="headerPanel">
+            Songs
+        </div>
+
+        <div id="title">
+            Player
+        </div>
+
+        <div id="playlist" class="headerPanel">
+            Playlist
+        </div>
+
+    </header>
+
+    <section>
+        <div id="listSongs" class="panel">
+            <p>Songs:</p>
+            <div class="after"></div>
+        </div>
+
+        <div class="wrapper">
+            <div id="vhs">
+                <audio id="music">
+                    <source src="" type="audio/mpeg">
+                </audio>
+                <div id="songIMG"> </div>
+                <div class="details">
+                    <h2 id="songTitle"></h2>
+                    <h3 id="songAuthor"></h3>
+                </div>
+
+                <div class="bar">
+                    <div class="fillbar"></div>
+                </div>
+
+                <div class="controls">
+
+                    <button id="before"><i class="fas fa-backward"></i></button>
+                    <button id="mainButton"><i id="playIcon" class="fas fa-play fa-2x"></i></button>
+                    <button id="after"><i class="fas fa-forward"></i></button>
+                </div>
+                <div>
+                    <button id="addButton"><i class="fas fa-plus"></i> </button>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div id="myPlaylist" class="panel">
+            <p id="navId">My Playlist</p>
+        </div>
+    </section>
+
+    <script src="jquery.js"></script>
+    <script src="operations.js" charset="utf-8"></script>
+
+</body>
+
+</html>

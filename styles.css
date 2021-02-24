@@ -1,0 +1,191 @@
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #3d4047;
+	  color: #209781;
+    
+    font-family: 'Lobster', sans-serif;
+
+    background: url("files/outsider_no_more_thumbnail.jpg") no-repeat center fixed;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    background-color: #383838;
+}
+.headerPanel{
+  background-color: rgb(0, 0, 0);
+  width:7%;
+  height: 60px;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.headerPanel:hover{
+  filter: brightness(200%);
+  background-color: rgb(50,50,50);
+}
+
+#title{
+   
+    text-shadow: -2px 0 black, 0 2px black,
+      2px 0 black, 0 -2px black;
+      padding-top: 3px;
+      font-size: 40px;
+      color:rgba(255, 255, 255, 0.884);
+      letter-spacing: 2px;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  section > div.panel {
+    margin-top: 50px;
+    height: 550px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 200px;
+    transition: height 0.4s;
+    overflow: hidden;
+    opacity: 0.6;
+    overflow-y: auto ;
+    letter-spacing: 1px;
+  }
+
+  
+  
+  section > div.panel.hide {
+    height: 0;
+    
+  }
+
+  
+  
+  section > div.panel p {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    height: 35px;
+    line-height: 50px;
+    color: white;
+  }
+
+  section > div.panel.div {
+    overflow: hidden;
+
+  }
+  
+  #player {
+    color: red;
+  }
+  
+  #nav {
+    border-radius: 20px;
+  }
+
+  /* odtwarzacz */
+
+.wrapper{
+    background-color: black;
+    margin-top: 70px;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #FF6633;
+     border-style: solid;
+}
+
+  #vhs{
+  
+      margin-top: 50px;
+      height:  400px;
+  }
+
+#songIMG{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('files/outsider_no_more_thumbnail.jpg') ;
+    background-position:center;
+    background-size: cover;
+}
+
+  #songTitle{
+    margin-bottom: 0;
+  }
+
+  #songAuthor{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #000;
+  }
+
+  #before{
+      background-color: gold;
+      cursor: pointer;
+      border-radius:10px;
+    }
+
+    .bar {
+      height: 5px;
+      background: rgb(68, 67, 67);
+      border-radius: 50px;
+    }
+    .bar .fillbar {
+      width: 0;
+      height: 5px;
+      background: #ff012f;
+      border-radius: 50px;
+    }
+  #mainButton{
+    border-radius: 50%;
+    background-color: #209781;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  #after{
+    border-radius:10px;
+    cursor: pointer;
+    background-color: rgb(228, 196, 16);
+
+}
+
+#addButton{
+  border-radius: 30%;
+  background-color: #209781;
+  color:black;
+  cursor: pointer;
+}
+
+
